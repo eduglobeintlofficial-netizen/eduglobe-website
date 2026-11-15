@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EduGlobe International helps Bangladeshi students explore international Bachelor's and Master's study opportunities.">
+  <meta name="theme-color" content="#102744">
+  <title>EduGlobe International | Your Future, Our Global Vision</title>
+  <style>
+    :root{--navy:#102744;--navy2:#18395f;--gold:#d8c38c;--ink:#182638;--muted:#657386;--paper:#f7f8fa;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(16,39,68,.97);color:#fff;border-bottom:1px solid rgba(216,195,140,.35)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+    .mark{width:42px;height:42px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:21px}
+    .brand small{display:block;font-size:10px;letter-spacing:3px;font-weight:500;color:#dbe2eb}
+    nav{display:flex;gap:25px;font-size:14px;color:#edf1f6}nav a:hover{color:var(--gold)}
+    .menu{display:none;background:none;border:1px solid #718096;color:#fff;border-radius:8px;padding:8px 11px}
+    .hero{background:linear-gradient(120deg,rgba(16,39,68,.98),rgba(24,57,95,.94));color:white;padding:96px 0 90px;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid rgba(216,195,140,.2);border-radius:50%;right:-120px;top:-170px;box-shadow:0 0 0 45px rgba(216,195,140,.035),0 0 0 95px rgba(216,195,140,.025)}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:700}
+    h1{font-size:clamp(38px,6vw,66px);line-height:1.08;max-width:760px;margin:18px 0}
+    .hero p{max-width:650px;color:#dce4ed;font-size:18px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-block;padding:13px 21px;border-radius:6px;font-weight:700;font-size:14px}
+    .primary{background:var(--gold);color:var(--navy)}.secondary{border:1px solid #aab8c8;color:#fff}
+    section{padding:78px 0}.section-head{max-width:690px;margin-bottom:35px}
+    h2{font-size:clamp(28px,4vw,40px);line-height:1.2;color:var(--navy);margin:8px 0 14px}
+    .section-head p,.muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{padding:25px;border:1px solid #e5e9ef;border-radius:10px;background:#fff;box-shadow:0 8px 24px rgba(16,39,68,.045)}
+    .card .ico{font-size:25px}.card h3{color:var(--navy);margin:12px 0 7px;font-size:19px}.card p{color:var(--muted);font-size:14px;margin:0}
+    .soft{background:var(--paper)}
+    .about{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+    .about-panel{background:var(--navy);color:white;padding:34px;border-radius:12px;position:relative}
+    .about-panel h3{color:var(--gold);font-size:24px;margin-top:0}.about-panel p{color:#dce4ed}
+    .destinations{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{padding:9px 14px;border-radius:30px;background:#fff;border:1px solid #e1e6ed;color:var(--navy);font-size:14px}
+    .steps{counter-reset:step}.step{position:relative;padding-left:58px;margin:22px 0}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--navy);font-weight:800}
+    .step h3{margin:0;color:var(--navy)}.step p{margin:4px 0;color:var(--muted)}
+    .cta{background:var(--navy);color:#fff;text-align:center;padding:68px 0}.cta h2{color:#fff}.cta p{color:#dce4ed;max-width:620px;margin:0 auto 24px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-card{padding:24px;border-radius:10px;background:var(--paper)}
+    footer{background:#0b1c30;color:#dce4ed;padding:30px 0;font-size:13px}
+    footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:760px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:var(--navy);padding:18px 4%;flex-direction:column;gap:15px}.nav.open nav{display:flex}.menu{display:block}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:25px}.contact-grid{grid-template-columns:1fr}.hero{padding:72px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav" id="nav">
+    <a class="brand" href="#home" aria-label="EduGlobe International home"><span class="mark">🌐</span><span>EduGlobe <small>INTERNATIONAL</small></span></a>
+    <button class="menu" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('open')">Menu ☰</button>
+    <nav>
+      <a href="#about">About</a><a href="#services">Services</a><a href="#destinations">Destinations</a><a href="#process">How It Works</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="home">
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">International Education Guidance</div>
+      <h1>Your Future,<br><span style="color:var(--gold)">Our Global Vision.</span></h1>
+      <p>Explore Bachelor's and Master's study opportunities abroad with clear, student-focused guidance from EduGlobe International.</p>
+      <div class="actions"><a class="btn primary" href="#contact">Talk to our team</a><a class="btn secondary" href="#destinations">Explore destinations</a></div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <div class="eyebrow">About EduGlobe</div><h2>Helping students navigate global education.</h2>
+        <p class="muted">EduGlobe International is a Bangladesh-based, online education guidance initiative supporting students who want to explore higher-education opportunities overseas.</p>
+        <p class="muted">We aim to make the process easier to understand—from researching suitable courses and universities to preparing applications and learning about scholarship and student-visa requirements.</p>
+      </div>
+      <div class="about-panel"><h3>Our approach</h3><p><strong>Student-centred.</strong> Guidance shaped around your academic background and goals.</p><p><strong>Transparent.</strong> Clear information about processes, requirements and service fees.</p><p><strong>Responsible.</strong> No promises of guaranteed admission, scholarships or visa approval.</p></div>
+    </div>
+  </section>
+  <section class="soft" id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What we do</div><h2>Guidance at every stage.</h2><p>Support may vary depending on the country, institution and your individual circumstances.</p></div>
+      <div class="grid">
+        <article class="card"><div class="ico">🎓</div><h3>Course & University Research</h3><p>Explore programmes and institutions that align with your academic profile and future plans.</p></article>
+        <article class="card"><div class="ico">📝</div><h3>Admission Guidance</h3><p>Understand application steps, entry requirements, deadlines and supporting documents.</p></article>
+        <article class="card"><div class="ico">🏅</div><h3>Scholarship Information</h3><p>Identify possible funding opportunities and review their published eligibility criteria.</p></article>
+        <article class="card"><div class="ico">📄</div><h3>Document Preparation</h3><p>Get guidance on organising academic and application documents.</p></article>
+        <article class="card"><div class="ico">🛂</div><h3>Student Visa Guidance</h3><p>Learn about official visa procedures and document requirements for your destination.</p></article>
+        <article class="card"><div class="ico">💬</div><h3>Online Counselling</h3><p>Discuss your study goals and questions through online communication.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="destinations">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Study destinations</div><h2>Explore opportunities around the world.</h2><p>We can help you research study options in these destinations. Availability and eligibility depend on each institution and programme.</p></div>
+      <div class="destinations">
+        <span class="chip">🇪🇺 Europe</span><span class="chip">🇦🇺 Australia</span><span class="chip">🇨🇦 Canada</span><span class="chip">🇨🇳 China</span><span class="chip">🇯🇵 Japan</span><span class="chip">🇰🇷 South Korea</span><span class="chip">🇸🇦 Saudi Arabia</span><span class="chip">🇵🇰 Pakistan</span>
+      </div>
+    </div>
+  </section>
+  <section class="soft" id="process">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Getting started</div><h2>A clear process, one step at a time.</h2></div>
+      <div class="steps">
+        <div class="step"><h3>Share your study goals</h3><p>Tell us your current qualification, intended degree, subject interests and preferred destinations.</p></div>
+        <div class="step"><h3>Review suitable options</h3><p>Research relevant programmes, entry requirements, costs and application timelines.</p></div>
+        <div class="step"><h3>Prepare your application</h3><p>Organise documents and work through the application process for your selected institutions.</p></div>
+        <div class="step"><h3>Understand the next steps</h3><p>Review official scholarship and visa information before making decisions or payments.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="wrap"><div class="eyebrow">Start your journey</div><h2>Make your next step an informed one.</h2><p>Contact EduGlobe International to discuss your plans for Bachelor's or Master's study abroad.</p><a class="btn primary" href="#contact">Contact EduGlobe</a></div>
+  </section>
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Contact</div><h2>Let's discuss your study plans.</h2><p>EduGlobe International currently operates online. Add your official contact details below before publishing.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card"><strong>WhatsApp</strong><p class="muted">+880 1581-952534</p><a class="btn primary" href="https://wa.me/8801581952534">Message us on WhatsApp</a></div>
+        <div class="contact-card"><strong>Email</strong><p class="muted">Contact EduGlobe International by email.</p><a href="mailto:eduglobeintl@gmail.com">eduglobeintl@gmail.com</a></div>
+        <div class="contact-card"><strong>Facebook</strong><p class="muted">Facebook page link has not been provided yet.</p><a href="https://www.facebook.com/share/1F8CvZECeS/" target="_blank" rel="noopener noreferrer">Visit our Facebook Page</a></div>
+        <div class="contact-card"><strong>Service model</strong><p class="muted">Online education guidance for students in Bangladesh.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><div><strong>EduGlobe International</strong><br><span>Your Future, Our Global Vision.</span></div><div>© <span id="year"></span> EduGlobe International. All rights reserved.</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
